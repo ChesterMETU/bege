@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.navbar {
+  color: white;
+  background-color: #2f2626;
+}
+
+.navbar-close {
+  color: white;
+  background-color: #0c0c0c;
+}
+
+.navbar-container {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  color: #ffff;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.title-container {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.list-item {
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+
+.list-item:hover {
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon-close {
+  display: none;
+}
+
+.title-container {
+  color: #ffff;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-icon {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .menu-icon-close {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+  }
+
+  .navbar {
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+  }
+
+  .navbar-close {
+    transition: all 1s;
+    position: fixed;
+    left: -130px;
+    top: 0;
+    bottom: 0;
+    background: black;
+  }
+
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    height: 100%;
+    font-size: 18px;
+  }
+
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .title-container {
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
